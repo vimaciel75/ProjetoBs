@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Donuts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #ff9b00;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .product-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+        }
+        .product-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product-item h3 {
+            color: #ff9b00;
+        }
+        .product-item p {
+            font-size: 16px;
+            color: #555;
+        }
+        .product-item button {
+            background-color: #ff9b00;
+            border: none;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product-item button:hover {
+            background-color: #e88f00;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .order-form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .order-form input, .order-form select, .order-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .order-form button {
+            background-color: #ff9b00;
+            color: white;
+            cursor: pointer;
+        }
+        .order-form button:hover {
+            background-color: #e88f00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Loja de Donuts!</h1>
+        <p>Os melhores donuts da cidade!</p>
+    </header>
+
+    <div class="container">
+        <h2>Escolha seu Donut</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/250x250.png?text=Donut+1" alt="Donut 1">
+                <h3>Donut Chocolate</h3>
+                <p>Deliciosa cobertura de chocolate com recheio cremoso.</p>
+                <button>Comprar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://via.placeholder.com/250x250.png?text=Donut+2" alt="Donut 2">
+                <h3>Donut Morango</h3>
+                <p>Delicioso donut com cobertura de morango e granulado.</p>
+                <button>Comprar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://via.placeholder.com/250x250.png?text=Donut+3" alt="Donut 3">
+                <h3>Donut Original</h3>
+                <p>Donut simples e saboroso, do jeito tradicional.</p>
+                <button>Comprar Agora</button>
+            </div>
+        </div>
+
+        <div class="order-form">
+            <h2>Faça seu Pedido</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="produto">Escolha o Donut:</label>
+                <select id="produto" name="produto" required>
+                    <option value="donut_chocolate">Donut Chocolate</option>
+                    <option value="donut_morango">Donut Morango</option>
+                    <option value="donut_original">Donut Original</option>
+                </select>
+
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" required>
+
+                <button type="submit">Finalizar Pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Loja de Donuts | Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
